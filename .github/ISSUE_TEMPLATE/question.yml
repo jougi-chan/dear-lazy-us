@@ -1,0 +1,16 @@
+name: 質問
+description: 使い方などを聞く
+title: "[質問] "
+labels: ["question"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **API キー・個人情報・講義資料や過去問の中身は書かないでください。** 画像を貼るときは、それらが写っていないかも確かめてください。
+        返答は保証できません。
+  - type: textarea
+    id: question
+    attributes:
+      label: 質問の内容
+    validations:
+      required: true
