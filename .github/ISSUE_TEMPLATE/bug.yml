@@ -1,0 +1,49 @@
+name: 不具合の報告
+description: うまく動かないところを知らせる
+title: "[不具合] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **API キー・個人情報・講義資料や過去問の中身は書かないでください。** 画像を貼るときは、それらが写っていないかも確かめてください。
+        返答は保証できません。
+  - type: input
+    id: version
+    attributes:
+      label: アプリの版
+      placeholder: 例：1.0.0
+    validations:
+      required: true
+  - type: input
+    id: windows
+    attributes:
+      label: Windows の版
+      placeholder: 例：Windows 11
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 何をしたか（手順）
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: どうなるはずだったか
+  - type: textarea
+    id: actual
+    attributes:
+      label: 実際にどうなったか
+    validations:
+      required: true
+  - type: textarea
+    id: message
+    attributes:
+      label: 画面に出た文言（あれば）
+  - type: textarea
+    id: screenshot
+    attributes:
+      label: 画面の画像（任意）
+      description: 貼る前に、キー・個人情報・資料の中身・ファイル名やフォルダ名・ほかのアプリが写っていないか確かめてください。
